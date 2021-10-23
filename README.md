@@ -1,16 +1,13 @@
-<div align="center">
-    <img src="https://github.com/Hypfer/Valetudo/blob/master/assets/logo/valetudo_logo_with_name.svg" width="800" alt="valetudo">
-    <p align="center"><h2>Free your vacuum from the cloud</h2></p>
-</div>
+<img src="https://github.com/Hypfer/Valetudo/blob/master/assets/logo/valetudo_logo_with_name.svg" width="800" alt="Valetudo logo">
 
-Valetudo aims to be a vendor-agnostic abstraction and cloud replacement for vacuum robots which started as a standalone
-binary on rooted roborock vacuums.
+## Free your vacuum from the cloud
 
+Valetudo aims to be a vendor-agnostic abstraction and cloud replacement for vacuum robots.  
 
-Since then, support for more vendors has been added and will also be added in the future.
+The project started as a standalone binary on rooted roborock vacuums and has since grown to support more vendors, with more to come in the future.
 
 The main goal of Valetudo is to disable all cloud connectivity and instead provide controls via a
-**mobile-friendly webinterface** as well as **MQTT** connectivity which also supports **Home Assistant Autodiscovery**.
+**mobile-friendly web interface** as well as **MQTT** connectivity that also supports discovery in **Home Assistant**.
 
 For more information, check out the [Valetudo Newcomer Guide Early 2021 Edition](https://valetudo.cloud/pages/general/newcomer_guide_early_2021.html) as well
 as the docs in general at [https://valetudo.cloud](https://valetudo.cloud)
@@ -26,6 +23,6 @@ There, you will also find a list of [supported robots](https://valetudo.cloud/pa
 * \#valetudo on irc.libera.chat
 
 ### Resources
-* [Lovelace Valetudo Map Card](https://github.com/TheLastProject/lovelace-valetudo-map-card) - Map card for Home Assistant
-* [I can't believe it's not Valetudo](https://github.com/Hypfer/ICantBelieveItsNotValetudo) - A companion service for PNG Maps
-* [Valeronoi](https://github.com/ccoors/Valeronoi) - A companion app for generating WiFi Heatmaps
+* [Lovelace Valetudo Map Card](https://github.com/TheLastProject/lovelace-valetudo-map-card) - A map card for Home Assistant
+* [I can't believe it's not Valetudo](https://github.com/Hypfer/ICantBelieveItsNotValetudo) - A companion service for PNG maps
+* [Valeronoi](https://github.com/ccoors/Valeronoi) - A companion app for generating Wi-Fi heatmaps
