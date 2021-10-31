@@ -5,7 +5,7 @@ order: 10
 ---
 # Upgrading Valetudo
 
-If you're using Valetudo 2021.11.0 or later, you should be able to use its integrated updater functionality.
+If you're using Valetudo 2021.11.0 or later, you should be able to use its integrated updater functionality from the web interface.
 
 Below are manual upgrading instructions for older versions:
 
@@ -23,13 +23,14 @@ cd /mnt/data
 wget <url to tar from dustbuilder>
 tar xzf <file.tar.gz>
 ```
-4. The robot has two systems, you cannot update a system whilst it is in use. You will be in system A by default, allowing you to update system B. Update system B (from system A) then reboot into system B:
+4. The robot has two systems; you cannot update a system whilst it is in use. You will be in system A by default, allowing you to update system B. Update system B (from system A) then reboot into system B:
 ```sh
 ./install_b.sh
 reboot
 ```
 5. Reconnect to your robot via SSH. You'll now be in system B, allowing you to update system A. Update system A (from system B) then reboot back into system A for normal operation:
 ```sh
+cd /mnt/data
 ./install_a.sh
 rm -f <file.tar.gz>
 reboot
@@ -39,7 +40,7 @@ Your robot should now be running the latest version.
 
 ---
 
-You can also stop the Valetudo service by running `/etc/init/S11valetudo stop`, and then replace the binary via scp + reboot or restart the service.
+You can also stop the Valetudo service by running `/etc/init/S11valetudo stop`, and then replace the binary via SCP, then reboot or restart the service.
 
 Just make sure that you try a full reflash **if you encounter any issues such as "No Map Data" or disappearing settings**.
 
